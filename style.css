@@ -1,24 +1,27 @@
 body{
     font-family: Helvetica, Arial, sans-serif;
-    line-height: 1.6
+    line-height: 1.6;
+    background: grey;
 }
 
 body > div {
-    width: 600px;
+    width: 800px;
     margin-left: auto;
     margin-right: auto;
     background: white;
-    border: 1px solid #ffd24a 
+    border: 1px solid #ffd24a;
 
 }
 
 #site_header{
     background-color: #ff8523;
     text-align: left;
+    padding: 20px;
+    height: 120px;
 }
 
 #logo{
-    padding-top: 12px;
+    display: block;
     padding-bottom: 12px;
 }
 .main_navigation a{
@@ -27,27 +30,23 @@ body > div {
     padding-bottom: 12px;
     border: 1px solid white;
     border-radius: 5px;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+section:nth-child(1){
+    padding-left: 20px;
+    padding-top: 20px
 }
 
 a, h2, h3{
-    color:#1fabe5
+    color:#1fabe5;
 }
 
 ul{
-    font-weight: bold
-}
-
-table, td, tr{
-    border-collapse: collapse;
-    border: 1px solid #1fabe5;
-}
-
-table{
-    width: 100%;
-}
-
-td, tr{
-    padding: 12px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-bottom: 25px;
 }
 
 thead{
@@ -56,38 +55,94 @@ thead{
     text-align: left;
     padding: 5px;
 }
+table, td, tr{
+    border-collapse: collapse;
+    border: 1px solid #1fabe5;
+}
+thead > tr > td{
+    border-collapse: collapse;
+    border: 2px solid #046c97;
+}
+
+table{
+    width: 100%;
+    padding: 12px;  
+}
+
+td, tr{
+    padding: 12px;
+}
+
+section:nth-child(2) {
+    border-top: 5px solid grey;
+    border-bottom: 5px solid grey;
+    margin: 20px;
+    padding-bottom: 30px;
+
+}
+
+section:nth-child(3){
+    margin: 20px;
+}
+div:first-child {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 form{
     background-color: #eee;
     border-radius: 5px;
+    padding-left: 12px;
+    padding-top: 20px;
+    padding-right: 12px;
 }
 
 .name{
     background-color: #ff8523;
     border-radius: 5px;
     color: white;
+    text-align: left;
+    padding-left: 40px;
+    padding: 18px;
 }
-
+td > img{
+    height: 50px;
+    width: 50px;
+}
 .city_container{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#city{
+    font-weight: bold;
 }
 
+label{
+    font-weight: bold;
+}
+input{
+    padding: 10px;
+    padding-left: 60px;
+}
 textarea{
-    width: 88%;
-    padding: 6%;
+    width: 94%;
+    padding: 3%;
     color: white;
     border: 1px solid #1fabe5;
+    margin-top: 20px
 }
 
 .submit_container{
     text-align: left;
+    padding-bottom: 12px;
 }
 
 #submit_button{
     background: #1fabe5;
     color: white;
     padding: 20px;
-    font-size: 0.9em;
     border-radius: 5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;x
 }
